@@ -21,4 +21,3 @@ WORKDIR /www/web
 COPY --from=build /www/web /www/web
 
 EXPOSE 9000
-
