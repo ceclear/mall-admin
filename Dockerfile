@@ -19,10 +19,9 @@ RUN apt-get update && apt-get install -y \
      && docker-php-ext-install bcmath \
      && docker-php-ext-install zip
 
-WORKDIR /www/web/mall-admin
+WORKDIR /www/web
 
-#COPY  . /www/web/mall-admin
-COPY . .
+COPY  . /www/web/mall-admin
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
