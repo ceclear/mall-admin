@@ -23,7 +23,6 @@ WORKDIR /www/web
 
 COPY  . /www/web/mall-admin
 #COPY . .
-
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ \
