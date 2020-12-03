@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
      && docker-php-ext-install bcmath \
      && docker-php-ext-install zip
 
-WORKDIR /www/web
+WORKDIR /www/web/mall-admin
 
 COPY  . /www/web/mall-admin
 #COPY . .
