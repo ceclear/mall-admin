@@ -21,7 +21,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /www/web/mall-admin
 
-COPY  . /www/web/mall-admin
+#COPY  . /www/web/mall-admin
+COPY . .
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
