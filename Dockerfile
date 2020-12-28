@@ -12,4 +12,5 @@ RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/compos
     && composer install \
     && chmod -R 777 storage
 
+
 EXPOSE 9000
