@@ -14,5 +14,4 @@ RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/compos
     && cp .env.example .env \
     && php artisan key:generate
 
-
 EXPOSE 9000
