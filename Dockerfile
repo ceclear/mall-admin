@@ -13,7 +13,7 @@ RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/compos
     && chmod -R 777 storage \
     && cp .env.example .env \
     && php artisan key:generate \
-    && php artisan admin:install \
+    && php artisan admin:install
 
 
 EXPOSE 9000
