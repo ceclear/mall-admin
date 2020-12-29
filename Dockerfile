@@ -9,7 +9,7 @@ COPY  . /www/web/mall-admin
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ \
-    && composer update \
+    && composer install \
     && chmod -R 777 storage \
     && cp .env.example .env \
     && php artisan key:generate
